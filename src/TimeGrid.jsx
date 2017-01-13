@@ -221,8 +221,8 @@ export default class TimeGrid extends Component {
     let { levels } = eventLevels(segments);
     let style = {};
 
-    if (isOverflowing)
-      style[rtl ? 'marginLeft' : 'marginRight'] = scrollbarSize() + 'px';
+    // if (isOverflowing)
+    //   style[rtl ? 'marginLeft' : 'marginRight'] = scrollbarSize() + 'px';
 
     function handleSelectSlot({ start, end }) {
       let slots = range.slice(start, end + 1)
