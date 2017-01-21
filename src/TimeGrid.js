@@ -226,8 +226,9 @@ export default class TimeGrid extends Component {
     let { isOverflowing } = this.state || {};
 
     let style = {};
-    if (isOverflowing)
-      style[rtl ? 'marginLeft' : 'marginRight'] = scrollbarSize() + 'px';
+    // mwk: hide scrollbar
+    // if (isOverflowing)
+    //   style[rtl ? 'marginLeft' : 'marginRight'] = scrollbarSize() + 'px';
 
     return (
       <div
